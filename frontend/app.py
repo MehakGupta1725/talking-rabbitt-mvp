@@ -130,7 +130,7 @@ if file:
             st.write(question)
 
         response = requests.post(
-            "http://127.0.0.1:8000/analyze",
+            "https://talking-rabbitt-backend.onrender.com/analyze",
             json={
                 "question": question,
                 "data": df.to_dict(orient="records")
